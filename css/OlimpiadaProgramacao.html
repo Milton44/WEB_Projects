@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Desafio Menu</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
@@ -93,7 +94,6 @@
             background: #f50a31;
             color: #fff;
         }
-
         @media(min-width: 679px) {
             .menu-toggle {
                 display: none;
@@ -111,6 +111,53 @@
                 display: none;
             }
         }
+
+        /*Minhas Modificações*/
+        main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5%;
+        }
+        .winner-container{
+            display: flex;
+            flex-basis:10%;
+            flex-flow:row wrap;
+            justify-content: space-evenly;
+        }
+        #winner{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            width: 40%;
+            align-items: center;
+        }
+        #winner div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media(min-width: 910px) {
+            main{
+                width: 910px;
+            }
+        }
+        @media(max-width: 420px) {
+            .winner-container{
+                flex-flow:column wrap;
+                justify-content: center;
+                align-items: center;
+            }
+            #winner{
+                width: 100%;
+            }
+        }
+
     </style>
 </head>
 
@@ -136,7 +183,66 @@
             <a href="#registar" class="botao destaque">Registrar</a>
         </aside>
     </header>
-
+    <img src="img/CardExemplo.jpg" width="100%">
+    <main>
+        <h1>Apresentção</h1>
+        <p>
+            Lorem ipsum dolor sit amet. Non excepturi nemo quo aliquid eligendi aut explicabo debitis non sequi Quis id officiis consectetur. Sed quod perferendis et culpa eveniet qui blanditiis commodi rem fugiat tenetur est fugiat omnis non unde architecto hic exercitationem sunt! At officiis quia sit minima optio a quaerat quia ea necessitatibus placeat.
+            Ea voluptatem natus qui nobis reiciendis sed quia quis. In quas eius fugiat facilis cum voluptatem mollitia est voluptatem quasi sit culpa sunt aut magni officia. Aut enim voluptate 33 dolores voluptas et omnis assumenda sed nulla minima sit ipsa doloribus hic veritatis impedit. Ab quisquam quia At aliquid error qui harum sequi qui nihil dolor ex galisum alias est itaque nihil At saepe accusantium.
+            Ab odit blanditiis sed nisi dolores aut dolore corporis qui quae eligendi et voluptates rerum. Et quae ipsum sit consequatur molestiae aut molestiae quisquam sit dolores tenetur. Est voluptatibus voluptas hic assumenda nulla et facere magnam sed facere quaerat quo quaerat vero At molestiae rerum ex dolorem molestiae? Aut beatae omnis qui amet iure ut dignissimos obcaecati est rerum expedita aut maxime illum
+        </p>
+        <h1>Ganhadores</h1>
+        <div class="winner-container">
+            <div id="winner">
+                <h1>2022</h1>
+                <div>
+                    <img src="img/user-icon.jpg" height="100" alt="Objetivo">
+                    <div>
+                        <h3>Nome do Ganhador</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet. Non excepturi nemo quo aliquid eligendi aut explicabo debitis non sequi Quis id officiis consectetur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="winner">
+                <h1>2021</h1>
+                <div>
+                    <img src="img/user-icon.jpg" height="100" alt="Objetivo">
+                    <div>
+                        <h3>Nome do Ganhador</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet. Non excepturi nemo quo aliquid eligendi aut explicabo debitis non sequi Quis id officiis consectetur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="winner">
+                <h1>2020</h1>
+                <div>
+                    <img src="img/user-icon.jpg" height="100" alt="Objetivo">
+                    <div>
+                        <h3>Nome do Ganhador</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet. Non excepturi nemo quo aliquid eligendi aut explicabo debitis non sequi Quis id officiis consectetur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="winner">
+                <h1>2019</h1>
+                <div>
+                    <img src="img/user-icon.jpg" height="100" alt="Objetivo">
+                    <div>
+                        <h3>Nome do Ganhador</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet. Non excepturi nemo quo aliquid eligendi aut explicabo debitis non sequi Quis id officiis consectetur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     
 </body>
 
