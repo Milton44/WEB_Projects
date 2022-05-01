@@ -123,11 +123,12 @@
             margin-right: auto;
             padding: 5%;
         }
-        .winner-container{
+        .flex-row-container{
             display: flex;
             flex-basis:10%;
             flex-flow:row wrap;
             justify-content: space-evenly;
+            gap: 20px;
         }
         #winner{
             display: flex;
@@ -141,19 +142,44 @@
             flex-direction: column;
             align-items: center;
         }
+        #language-description{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 40%;
+        }
+        #language-description div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 100%;
+            gap: 5px;
+        }
+        #language-description p{
+            margin: 0px;
+        }
 
-        @media(min-width: 910px) {
+        .short-icon{
+            width: 100px;
+            height: 100px;
+        }
+
+        @media(min-width: 1080px) {
             main{
-                width: 910px;
+                width: 1080px;
             }
         }
         @media(max-width: 420px) {
-            .winner-container{
+            .flex-row-container{
                 flex-flow:column wrap;
                 justify-content: center;
                 align-items: center;
             }
             #winner{
+                width: 100%;
+            }
+            #language-description{
                 width: 100%;
             }
         }
@@ -183,7 +209,7 @@
             <a href="#registar" class="botao destaque">Registrar</a>
         </aside>
     </header>
-    <img src="img/CardExemplo.jpg" width="100%">
+    <img src="img/o-que-e-paisagem.jpg" width="100%">
     <main>
         <h1>Apresentção</h1>
         <p>
@@ -192,11 +218,11 @@
             Ab odit blanditiis sed nisi dolores aut dolore corporis qui quae eligendi et voluptates rerum. Et quae ipsum sit consequatur molestiae aut molestiae quisquam sit dolores tenetur. Est voluptatibus voluptas hic assumenda nulla et facere magnam sed facere quaerat quo quaerat vero At molestiae rerum ex dolorem molestiae? Aut beatae omnis qui amet iure ut dignissimos obcaecati est rerum expedita aut maxime illum
         </p>
         <h1>Ganhadores</h1>
-        <div class="winner-container">
+        <div class="flex-row-container">
             <div id="winner">
                 <h1>2022</h1>
                 <div>
-                    <img src="img/user-icon.jpg" height="100" alt="Objetivo">
+                    <img class="short-icon" src="img/user-icon.jpg" alt="Objetivo">
                     <div>
                         <h3>Nome do Ganhador</h3>
                         <p>
@@ -208,7 +234,7 @@
             <div id="winner">
                 <h1>2021</h1>
                 <div>
-                    <img src="img/user-icon.jpg" height="100" alt="Objetivo">
+                    <img class="short-icon" src="img/user-icon.jpg" alt="Objetivo">
                     <div>
                         <h3>Nome do Ganhador</h3>
                         <p>
@@ -220,7 +246,7 @@
             <div id="winner">
                 <h1>2020</h1>
                 <div>
-                    <img src="img/user-icon.jpg" height="100" alt="Objetivo">
+                    <img class="short-icon" src="img/user-icon.jpg" alt="Objetivo">
                     <div>
                         <h3>Nome do Ganhador</h3>
                         <p>
@@ -232,13 +258,52 @@
             <div id="winner">
                 <h1>2019</h1>
                 <div>
-                    <img src="img/user-icon.jpg" height="100" alt="Objetivo">
+                    <img class="short-icon" src="img/user-icon.jpg" alt="Objetivo">
                     <div>
                         <h3>Nome do Ganhador</h3>
                         <p>
                             Lorem ipsum dolor sit amet. Non excepturi nemo quo aliquid eligendi aut explicabo debitis non sequi Quis id officiis consectetur.
                         </p>
                     </div>
+                </div>
+            </div>
+        </div>
+        <h1>Linguagens de 2022</h1>
+        <div class="flex-row-container">
+            <div id="language-description" style="background-color:blue">
+                <img class="short-icon" src="img/user-icon.jpg" alt="Objetivo">
+                <div>
+                    <p><b>Description:</b>Lorem ipsum dolor sit amet. Quo molestiae obcaecati eos corrupti nihil aut</p>
+                    <p><b>IDE:</b>Lorem ipsum dolor</p>
+                    <p><b>Documentação:</b>Lorem ipsum dolor</p>
+                    <p><b>Exemplos de sintaxe:</b>Lorem ipsum dolorqasdqdqwd</p>
+                </div>
+            </div>
+            <div id="language-description" style="background-color:yellow;">
+                <img class="short-icon" src="img/user-icon.jpg" alt="Objetivo">
+                <div>
+                    <p><b>Description:</b>Lorem ipsum dolor sit amet. Quo molestiae obcaecati eos corrupti nihil aut</p>
+                    <p><b>IDE:</b>Lorem ipsum dolor</p>
+                    <p><b>Documentação:</b>Lorem ipsum dolor</p>
+                    <p><b>Exemplos de sintaxe:</b>Lorem ipsum dolorqasdqdqwd</p>
+                </div>
+            </div>
+            <div id="language-description" style="background-color:pink;">
+                <img class="short-icon" src="img/user-icon.jpg" alt="Objetivo">
+                <div>
+                    <p><b>Description:</b>Lorem ipsum dolor sit amet. Quo molestiae obcaecati eos corrupti nihil aut</p>
+                    <p><b>IDE:</b>Lorem ipsum dolor</p>
+                    <p><b>Documentação:</b>Lorem ipsum dolor</p>
+                    <p><b>Exemplos de sintaxe:</b>Lorem ipsum dolorqasdqdqwd</p>
+                </div>
+            </div>
+            <div id="language-description" style="background-color:red;">
+                <img class="short-icon" src="img/user-icon.jpg" alt="Objetivo">
+                <div>
+                    <p><b>Description:</b>Lorem ipsum dolor sit amet. Quo molestiae obcaecati eos corrupti nihil aut</p>
+                    <p><b>IDE:</b>Lorem ipsum dolor</p>
+                    <p><b>Documentação:</b>Lorem ipsum dolor</p>
+                    <p><b>Exemplos de sintaxe:</b>Lorem ipsum dolorqasdqdqwd</p>
                 </div>
             </div>
         </div>
