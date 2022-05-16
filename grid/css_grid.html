@@ -139,7 +139,6 @@
             grid-row-end: 6;
             
         }
-
         #item_d #f{
             grid-column-start: 2;
             grid-column-end: 4;
@@ -148,6 +147,38 @@
             
         }        
         /*fim do item d*/
+
+        /*Resolução do item e*/
+        #item_e{
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        #item_e #h{
+            grid-column-start: 1;
+            grid-column-end: 5;
+
+            grid-row-start: 1;
+        }
+        #item_e #c{
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+            grid-row-start: 2;
+        }
+
+        #item_e #f{
+            grid-column-start: 4;
+
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        #item_e #d{
+            grid-column-start: 2;
+            grid-column-end: 4;
+
+        }
+
+        /*fim do item e*/
     </style>
 </head>
 
@@ -196,6 +227,7 @@
         <div class="card" id="a">A</div>
         <div class="card" id="b">B</div>
         <div class="card" id="c">C</div>
+        <div class="card" id="d">D</div>
         <div class="card" id="f">F</div>
         <div class="card" id="h">H</div>
     </div>
