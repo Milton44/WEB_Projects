@@ -17,6 +17,7 @@
             grid-template-columns: repeat(4, 1fr);
             width: 800px;
             height: 800px;
+            gap: 5px;
         }
         .card{
             background-color: rgb(255, 255, 255);
@@ -25,6 +26,7 @@
             height: 100%;
             width: 100%;
             text-align: center;
+            padding: 0px;
         }
 
         #f{
@@ -103,6 +105,49 @@
             grid-row-end: 3;
         }
         /*fim do item c*/
+
+         /*Resolução do item d*/
+         #item_d{
+            grid-template-rows: repeat(6, 1fr);
+        }
+        #item_d #h{
+            grid-column-start: 1;
+            grid-column-end: 5;
+
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        #item_d #c{
+            grid-column-start: 2;
+            grid-column-end: 4;
+
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+
+        #item_d #b{
+            grid-column-start: 1;
+            grid-column-end: 1;
+
+            grid-row-start: 3;
+            grid-row-end: 6;
+            
+        }
+        #item_d #a{
+            grid-column-start: 4;
+            grid-row-start: 3;
+            grid-row-end: 6;
+            
+        }
+
+        #item_d #f{
+            grid-column-start: 2;
+            grid-column-end: 4;
+
+            grid-row-start: 5;
+            
+        }        
+        /*fim do item d*/
     </style>
 </head>
 
@@ -135,6 +180,22 @@
         <div class="card" id="c">C</div>
         <div class="card" id="d">D</div>
         <div class="card" id="e">E</div>
+        <div class="card" id="f">F</div>
+        <div class="card" id="h">H</div>
+    </div>
+    <h1>Item d)</h1>
+    <div class="container" id="item_d">
+        <div class="card" id="a">A</div>
+        <div class="card" id="b">B</div>
+        <div class="card" id="c">C</div>
+        <div class="card" id="f">F</div>
+        <div class="card" id="h">H</div>
+    </div>
+    <h1>Item e)</h1>
+    <div class="container" id="item_e">
+        <div class="card" id="a">A</div>
+        <div class="card" id="b">B</div>
+        <div class="card" id="c">C</div>
         <div class="card" id="f">F</div>
         <div class="card" id="h">H</div>
     </div>
